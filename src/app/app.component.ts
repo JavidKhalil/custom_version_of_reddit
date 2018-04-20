@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  m_title: string;
+
+  addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean{
+    console.log(`Adding article title: ${title.value} and link: ${link.value}`);
+    return false;
+  }
+  constructor() {
+    this.m_title = 'the custom version of reddit';
+  }
+
 }
