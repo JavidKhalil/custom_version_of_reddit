@@ -18,6 +18,10 @@
   <button (click)="addArticle(newtitle,newlink)" class="ui positive right floated button">Add a new article...</button>
 </form>
 
+
+<!-- start adding here -->
 <div class="ui grid posts">
-<app-article></app-article>
+  <app-article *ngFor="let foobar of articles"  [article]="foobar">
+   </app-article>
 </div>
+<!-- end adding here -->
