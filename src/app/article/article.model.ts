@@ -28,9 +28,7 @@ export class Article {
       //e.g. foo.com/path/to/bar
       return domainAndPath.split('/')[0];
     } catch (err) {
-      return null; 
+      return null;
     }
   }
-
-
 }
